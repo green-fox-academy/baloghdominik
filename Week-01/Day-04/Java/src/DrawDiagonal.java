@@ -24,6 +24,6 @@ public class DrawDiagonal {
             System.out.println();
 
         }
-        
+
         }
     }
