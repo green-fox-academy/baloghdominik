@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class DrawDiagonal {
     public static void main(String[] args){
 
@@ -7,10 +6,8 @@ public class DrawDiagonal {
         Scanner scanner = new Scanner(System.in);
         int rows = scanner.nextInt();
 
-
         for (int r = 1; r <= rows; r++) {
             for (int c = 1; c <= rows; c++) {
-
 
                 if (c == r) {
                     System.out.print("%");
@@ -19,10 +16,8 @@ public class DrawDiagonal {
                 } else {
                     System.out.print(" ");
                 }
-
             }
             System.out.println();
-
         }
 
         }
