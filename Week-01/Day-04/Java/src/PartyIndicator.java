@@ -3,10 +3,8 @@ import java.util.Scanner;
 public class PartyIndicator {
     public static void main(String[] args) {
 
-        //This task is not finished yet!
         Scanner scanner = new Scanner(System.in);
 
-        // The program stops and waits for user input and to press enter
         System.out.println("How many girls are going to the party?");
         int girls = scanner.nextInt();
         System.out.println("How many boys are going to the party?");
