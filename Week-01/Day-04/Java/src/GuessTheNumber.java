@@ -23,7 +23,7 @@ public class GuessTheNumber {
         System.out.println("### Guess the number! ###");
         System.out.println("#########################");
 
-        int t = 1;
+        int t = 0;
         int hint = 1;
 
         int help;
