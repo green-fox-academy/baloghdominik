@@ -15,8 +15,10 @@ public class QuoteSwap{
 
     }
     private static String quoteSwap(ArrayList<String> list) {
-        String text = "";
-
-        return text;
+        String temp = list.get(2);
+        String temp2 = list.get(5);
+        list.set(2, temp2);
+        list.set(5, temp);
+        return String.join(" ", list);
     }
 }
