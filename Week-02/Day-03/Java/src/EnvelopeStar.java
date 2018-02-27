@@ -9,6 +9,10 @@ public class EnvelopeStar {
     static int G = 0;
     static int B = 0;
 
+    static int R1 = 0;
+    static int G1 = 0;
+    static int B1 = 255;
+
     public static void mainDraw(Graphics graphics) {
         Star(graphics);
     }
@@ -84,7 +88,6 @@ public class EnvelopeStar {
         int B = (int)(Math.random( )*256);
         Color randomColor = new Color(R, G, B);
         graphics.setColor(randomColor);
-
     }*/
 
     private static void ColorLoop(Graphics graphics) {
@@ -112,8 +115,26 @@ public class EnvelopeStar {
         }
         Color randomColor = new Color(R, G, B);
         graphics.setColor(randomColor);
-
     }
+    /*private static void bgColorLoop(Graphics graphics) {
+        if (R1 < 255 && G1 == 0 && B1 == 0) {
+            R1++;
+        } else if (B1 < 255 && G1 == 0 && R1 == 255) {
+            B1++;
+        } else if (R1 <= 255 && R1 >= 1 && G1 == 0 && B1 == 255) {
+            R1--;
+        } else if (R1 == 0 && G1 < 255 && B1 == 255) {
+            G1++;
+        } else if (R1 == 0 && G1 == 255 && B1 <= 255 && B1 >= 1) {
+            B1--;
+        } else if (R1 < 255 && G1 == 255 && B1 == 0) {
+            R1++;
+        } else if (R1 == 255 && G1 <= 255 && G1 >= 1 && B1 == 0){
+            G1--;
+        }
+        Color randomColor = new Color(R, G, B);
+        graphics.setColor(randomColor);
+    }*/
 
     // Canvas
     static int WIDTH = 400;
@@ -128,12 +149,15 @@ public class EnvelopeStar {
         jFrame.add(imagePanel);
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
+
         imagePanel.setBackground(Color.black);
 
 
         while(true) {
+            //Color bg = new Color(R1, G1, B1);
+            //imagePanel.setBackground(bg);
             imagePanel.repaint();
-            Thread.sleep(10);
+            Thread.sleep(5);
        }
     }
 
@@ -142,6 +166,7 @@ public class EnvelopeStar {
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
             ColorLoop(graphics);
+            //bgColorLoop(graphics);
             mainDraw(graphics);
 
         }
