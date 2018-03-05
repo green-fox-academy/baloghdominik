@@ -6,11 +6,17 @@ public class Pirate {
     private int intoxication;
     private boolean alive;
     private String pirateName;
+    private String rank;
 
-    public Pirate() {
+    public Pirate(String rank) {
         this.pirateName = nameGenerator();
         this.intoxication = 0;
         this.alive = true;
+        this.rank = rank;
+    }
+
+    public  void pirateInfo() {
+        System.out.println("Your name is " + this.pirateName + ", your rank is "+ this.rank +" and you drunk "+ this.intoxication +" times.");
     }
 
     public void drinkSomeRum() {
@@ -19,7 +25,6 @@ public class Pirate {
         } else {
             die();
         }
-
     }
 
     public void howsItGoingMate() {
@@ -82,4 +87,12 @@ public class Pirate {
 
         return name;
         }
+
+    @Override
+    public String toString(){
+        String result = "";
+        result = "alive: "+ this.alive +", intoxication: "+ this.intoxication +", rank: "+ this.rank +", name: "+ this.pirateName;
+        return result;
+    }
+
 }

@@ -81,7 +81,7 @@ public class Tree {
 
         while(true) {
             imagePanel.repaint();
-            Thread.sleep(5);
+            Thread.sleep(10);
         }
     }
 
