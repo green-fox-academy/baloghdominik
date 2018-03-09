@@ -1,7 +1,7 @@
 # baloghdominik
 
-##BeCool Syllabus: 
-https://github.com/greenfox-academy/becool-syllabus
+## BeCool Syllabus: 
+[CLICK HERE](https://github.com/greenfox-academy/becool-syllabus)
 
-##TODO Applicaton:
-https://github.com/baloghdominik/todo-app
+## TODO Applicaton:
+[CLICK HERE](https://github.com/baloghdominik/todo-app)
