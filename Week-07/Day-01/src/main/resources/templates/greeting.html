@@ -5,6 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<center><p th:text="'Hello, ' + ${name} + '!'"/></center>
+<center>
+    <p th:text="'Hello, ' + ${name} + '!'"/>
+    <p th:text="'This site was loaded '+ ${count} +' times since last server start.'"/>
+</center>
 </body>
 </html>
