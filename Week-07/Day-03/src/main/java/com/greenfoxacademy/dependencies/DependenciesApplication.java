@@ -1,5 +1,6 @@
 package com.greenfoxacademy.dependencies;
 
+import com.greenfoxacademy.dependencies.services.UtilityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +13,9 @@ public class DependenciesApplication implements CommandLineRunner {
 
     @Autowired
     MyColor myColor;
+
+    @Autowired
+    UtilityService utilityService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DependenciesApplication.class, args);
